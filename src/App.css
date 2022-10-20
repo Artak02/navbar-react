@@ -1,0 +1,153 @@
+ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  img:not(.logo) {
+    width: 100%;
+  }
+  img {
+    display: block;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+  
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+   
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 0.875rem;
+  }
+  p {
+    margin-bottom: 1.25rem;
+    
+  }
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.75rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    body {
+      font-size: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+      line-height: 1;
+    }
+  }
+   
+   nav {
+      background: white;
+    }
+    .nav-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .nav-toggle {
+      font-size: 20px;
+      color: rgb(57, 104, 174);
+      background: transparent;
+      border-color: transparent;
+      transition: all 0.3s linear;
+      cursor: pointer;
+    }
+    .nav-toggle:hover {
+      color: lightblue;
+      transform: rotate(90deg);
+    }
+    .logo {
+      height: 40px;
+    }
+    ul a {
+      color: black;
+      font-size: 18px;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      display: block;
+      padding: 10px 20px;
+      transition: all 0.3s linear;
+    }
+    ul a:hover {
+      background: lightblue;
+      color: gray;
+      padding-left: 20px;
+    }
+    .social-icons {
+      display: none;
+    }
+    .links {
+      height: 0;
+      overflow: hidden;
+      transition: all 0.3s linear;
+    }
+    .show-links {
+      height: 180px;
+      overflow: hidden;
+      transition: all 0.3s linear;
+    }
+    @media screen and (min-width: 800px) {
+      .nav-center {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .nav-header {
+        padding: 0;
+      }
+      .nav-toggle {
+        display: none;
+      }
+      .links {
+        height: auto;
+        display: flex;
+      }
+      .links a {
+        padding: 0;
+        margin: 0 10px;
+      }
+      .links a:hover {
+        padding: 0;
+        background: transparent;
+      }
+      .social-icons {
+        display: flex;
+      }
+      .social-icons a {
+        margin: 10 10px;
+        color: rgb(57, 104, 174);
+        transition: all 0.3s linear;
+      }
+      .social-icons a:hover {
+        color: lightblue;
+      }
+    } 
